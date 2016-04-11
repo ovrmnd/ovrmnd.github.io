@@ -4,14 +4,6 @@
     max-width: $max-width;
     margin: 0 auto;
     padding: 1rem;
-
-    @media all and (min-width: $bp-m) {
-        padding: 1rem 2rem;
-    }
-
-    @media all and (min-width: $bp-l) {
-        padding: 1rem;
-    }
 }
 
 // Grid container

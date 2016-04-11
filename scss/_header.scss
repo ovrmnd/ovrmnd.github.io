@@ -1,5 +1,29 @@
 // Header
 
 .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: $secondary;
 
+    .container {
+        position: relative;
+    }
+}
+
+.logo {
+    display: inline-block;
+
+    svg {
+        width: 50px;
+    }
+
+    .dark {
+        fill: $secondary;
+    }
+
+    .light {
+        fill: $primary;
+    }
 }

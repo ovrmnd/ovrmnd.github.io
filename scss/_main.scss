@@ -1,5 +1,11 @@
 // Main
 
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
 body {
 	font: 100%/1.5 $font;
 	-webkit-text-size-adjust: 100%;
@@ -15,7 +21,7 @@ a {
     transition: color 0.3s ease-in-out;
 
     &:hover {
-        color: $primary-light;
+        color: $white;
     }
 }
 
