@@ -39,7 +39,7 @@
         float: none !important;
         display: inline-block;
         text-align: left;
-        vertical-align: top;
+        vertical-align: middle;
     }
 
     [class*='gi-fixed'] {
@@ -62,8 +62,14 @@
         }
 
     }
+
     > .gi-sticky .block > :last-child {
         margin-top: auto;
+    }
+
+    &.g-center {
+        justify-content: center;
+        align-items: center;
     }
 }
 

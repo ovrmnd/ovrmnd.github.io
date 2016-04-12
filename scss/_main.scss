@@ -12,7 +12,7 @@ body {
     color: $primary;
     background: $secondary;
     min-width: $min-width;
-
+    overflow-x: hidden;
 }
 
 a {
