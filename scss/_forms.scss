@@ -1,4 +1,5 @@
 input,
+textarea,
 select {
     display: block;
     width: 100%;
@@ -11,6 +12,11 @@ select {
     appearance: none;
     -webkit-appearance: none;
     transition: background 0.3s ease-in-out;
+}
+
+textarea {
+    height: 150px;
+    resize: none;
 }
 
 .form-field {
@@ -38,6 +44,8 @@ select {
 
     input:focus ~ span,
     input.filled ~ span,
+    textarea:focus ~ span,
+    textarea.filled ~ span,
     select:focus ~ span,
     select.filled ~ span {
         top: 0;
@@ -60,4 +68,11 @@ select {
         padding-bottom: 0;
         font-size: 1.2rem;
     }
+}
+
+.form-notice {
+    display: none;
+    border: 1px solid $secondary;
+    padding: 2rem;
+    font-size: 1.2rem
 }

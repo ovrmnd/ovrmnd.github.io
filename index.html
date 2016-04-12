@@ -150,19 +150,52 @@
                         </div>
 
                         <div class="gi gi-m-6">
+                            <div class="form-field">
+                                <label>
+                                    <input type="text" name="phone">
+                                    <span>Phone</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="gi gi-m-6">
+                            <div class="form-field select">
+                                <label>
+                                    <select name="services">
+                                        <option value="" selected></option>
+                                        <option value="Not sure">Not sure</option>
+                                        <option value="Development">Development</option>
+                                        <option value="Design">Design</option>
+                                        <option value="SEO">SEO</option>
+                                        <option value="Content/Copywriting">Content/Copywriting</option>
+                                        <option value="Everything">Everything</option>
+                                    </select>
+                                    <span>Project Type</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="gi gi-m-6">
                             <div class="form-field select">
                                 <label>
                                     <select name="budget">
-                                        <option value="" disabled selected></option>
+                                        <option value="" selected></option>
                                         <option value="Not sure">Not sure</option>
-                                        <option value="Less than $1,000">Less than $2,000</option>
-                                        <option value="$2,000 - $4,000">$2,000 - $4,000</option>
-                                        <option value="$4,000 - $6,000">$4,000 - $6,000</option>
-                                        <option value="$6,000 - $8,000">$6,000 - $8,000</option>
-                                        <option value="$8,000 - $10,000">$8,000 - $10,000</option>
+                                        <option value="Less than $1,000">Less than $1,000</option>
+                                        <option value="$1,000 - $5,000">$1,000 - $5,000</option>
+                                        <option value="$5,000 - $10,000">$5,000 - $10,000</option>
                                         <option value="Greater than $10,000">Greater than $10,000</option>
                                     </select>
                                     <span>Budget</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="gi">
+                            <div class="form-field">
+                                <label>
+                                    <textarea name="Comments"></textarea>
+                                    <span>Comments</span>
                                 </label>
                             </div>
                         </div>
@@ -176,6 +209,8 @@
                         </div>
                     </div>
                 </form>
+
+                <div class="form-notice"></div>
             </div>
         </section>
 

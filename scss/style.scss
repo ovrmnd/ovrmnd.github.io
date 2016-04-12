@@ -2,10 +2,12 @@
  * Main Styles
  */
 
+// Required
 @import "functions";
 @import "variables";
 @import "reset";
 
+// Reusable
 @import "utility";
 @import "main";
 @import "grid";
@@ -13,7 +15,10 @@
 @import "buttons";
 @import "forms";
 
+// Styling
 @import "header";
 @import "nav";
 @import "sections";
 @import "footer";
+
+// Vendors
