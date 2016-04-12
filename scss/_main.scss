@@ -71,3 +71,13 @@ pre,
     padding: 0.1rem;
     white-space: normal;
 }
+
+::-moz-selection {
+    color: $secondary;
+    background: $white;
+}
+
+::selection {
+    color: $secondary;
+    background: $white;
+}
