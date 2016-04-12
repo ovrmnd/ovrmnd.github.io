@@ -29,6 +29,7 @@ select {
         left: 1.5rem;
         font-size: 1rem;
         color: $primary;
+        pointer-events: none;
         transition: 0.3s ease-in-out;
         transform: translateY(-50%);
     }
