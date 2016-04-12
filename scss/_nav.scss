@@ -9,4 +9,24 @@
         float: left;
         margin-left: 2rem;
     }
+
+    a {
+        position: relative;
+
+        &:after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background: $primary;
+            transition: 0.3s cubic-bezier(0.680, -0.550, 0.265, 1.550);
+        }
+
+        &:hover:after {
+            width: 100%;
+            background: $white;
+        }
+    }
 }
