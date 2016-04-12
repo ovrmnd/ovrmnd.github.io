@@ -12,21 +12,55 @@
 
     a {
         position: relative;
+        display: block;
 
-        &:after {
-            content: '';
-            position: absolute;
-            bottom: -2px;
-            left: 0;
-            width: 0;
-            height: 1px;
-            background: $primary;
-            transition: 0.3s cubic-bezier(0.680, -0.550, 0.265, 1.550);
+        &.active {
+            color: $white;
         }
 
-        &:hover:after {
-            width: 100%;
-            background: $white;
+        @media (min-width: 599px) {
+            &:after {
+                content: '';
+                position: absolute;
+                bottom: -2px;
+                left: 0;
+                width: 0;
+                height: 1px;
+                background: $primary;
+                transition: 0.3s cubic-bezier(0.680, -0.550, 0.265, 1.550);
+            }
+
+            &:hover:after,
+            &.active:after {
+                width: 100%;
+                background: $white;
+            }
+        }
+    }
+
+    @media (max-width: 600px) {
+        top: 100%;
+        right: 0;
+        left: 0;
+        transform: none;
+        width: 100%;
+        padding: 0.75rem 1rem;
+        background: $secondary;
+        border-top: 1px solid $primary;
+        text-align: center;
+        display: none;
+
+        &.open {
+            display: block;
+        }
+
+        li {
+            float: none;
+            margin: 0;
+        }
+
+        a {
+            padding: 0.75rem 0;
         }
     }
 }
