@@ -1,6 +1,10 @@
 .section {
-    padding: 0 0 8rem 0;
+    padding: 0 0 4rem 0;
     background: $secondary;
+
+    @media (min-width: $bp-xs) {
+        padding-bottom: 8rem;
+    }
 }
 
 .section--alt {
