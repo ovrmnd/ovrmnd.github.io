@@ -11,28 +11,6 @@
     .container {
         position: relative;
     }
-
-    .primary {
-        background: $primary;
-
-        a {
-            color: $secondary;
-        }
-
-        .logo {
-            .dark {
-                fill: $primary;
-            }
-
-            .light {
-                fill: $secondary;
-            }
-        }
-    }
-
-    .secondary {
-        background: $secondary;
-    }
 }
 
 .logo {
@@ -65,4 +43,26 @@
     @media (min-width: 599px) {
         display: none;
     }
+}
+
+.midnightHeader.primary {
+    background: $primary;
+
+    a {
+        color: $secondary;
+    }
+
+    .logo {
+        .dark {
+            fill: $primary;
+        }
+
+        .light {
+            fill: $secondary;
+        }
+    }
+}
+
+.midnightHeader.secondary {
+    background: $secondary;
 }

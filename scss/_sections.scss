@@ -13,9 +13,14 @@
 }
 
 .section--hero {
-    padding-top: 15rem;
-    padding-bottom: 15rem;
+    padding-top: 12rem;
+    padding-bottom: 12rem;
     background: #5b4e62 url(../img/geo-pattern.png);
+
+    @media (min-width: $bp-s) {
+        padding-top: 15rem;
+        padding-bottom: 15rem;
+    }
 }
 
 .section--approach {

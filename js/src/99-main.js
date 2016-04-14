@@ -42,12 +42,16 @@
      */
     $('.mobile-menu').click(function(e) {
         e.preventDefault();
-        $('.nav').toggleClass('open');
+        $('.mobile-nav').toggleClass('open');
         $(this).toggleClass('open');
     });
 
-    $('.nav a').click(function(e) {
-        $('.nav').removeClass('open');
+    $('.mobile-nav a').click(function(e) {
+        $('.mobile-nav, .mobile-menu').removeClass('open');
+        $(this).removeClass('open');
+    });
+    $(window).resize(function(e) {
+        $('.mobile-nav, .mobile-menu').removeClass('open');
         $(this).removeClass('open');
     });
 
