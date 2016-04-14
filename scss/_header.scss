@@ -5,11 +5,33 @@
     top: 0;
     left: 0;
     width: 100%;
-    background: $secondary;
+    // background: $secondary;
     z-index: 99;
 
     .container {
         position: relative;
+    }
+
+    .primary {
+        background: $primary;
+
+        a {
+            color: $secondary;
+        }
+
+        .logo {
+            .dark {
+                fill: $primary;
+            }
+
+            .light {
+                fill: $secondary;
+            }
+        }
+    }
+
+    .secondary {
+        background: $secondary;
     }
 }
 

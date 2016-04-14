@@ -51,6 +51,10 @@
         $(this).removeClass('open');
     });
 
+    /**
+     *  Initialize midnight
+     */
+    $('.header').midnight();
 
     /**
      *  Smooth scroll window to an element
@@ -62,6 +66,9 @@
         }, 500);
     });
 
+    /**
+     *  Handle submitting the contact for to Formspree
+     */
     $('.form-contact').submit(function(e) {
         e.preventDefault();
 
