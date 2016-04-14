@@ -46,6 +46,11 @@
         $(this).toggleClass('open');
     });
 
+    $('.nav a').click(function(e) {
+        $('.nav').removeClass('open');
+        $(this).removeClass('open');
+    });
+
 
     /**
      *  Smooth scroll window to an element
