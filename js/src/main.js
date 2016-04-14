@@ -77,19 +77,4 @@
             }
         });
     });
-
-    // $(window).scroll(function(e) {
-    //     if(($(this).scrollTop() + $('.header').height()) >= $('#contact').offset().top) {
-    //         $('.nav a').removeClass('active');
-    //         $('[href="#contact"]').addClass('active');
-    //     } else if(($(this).scrollTop() + $('.header').height()) >= $('#services').offset().top) {
-    //         $('.nav a').removeClass('active');
-    //         $('[href="#services"]').addClass('active');
-    //     } else if(($(this).scrollTop() + $('.header').height()) >= $('#approach').offset().top) {
-    //         $('.nav a').removeClass('active');
-    //         $('[href="#approach"]').addClass('active');
-    //     } else {
-    //         $('.nav a').removeClass('active');
-    //     }
-    // });
 })(jQuery);
