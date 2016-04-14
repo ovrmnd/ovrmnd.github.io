@@ -10,6 +10,7 @@
 
 .section--hero {
     padding-top: 10rem;
+    background: transparent;
 }
 
 .section--approach {
@@ -43,6 +44,10 @@
         transform: skewY(3deg);
     }
 
+    .g {
+        margin: 0;
+    }
+
     header {
         text-align: center;
     }
@@ -52,9 +57,11 @@
     }
 
     .gi {
+        border: 5px solid transparent;
+
         &:hover {
-            color: $secondary;
-            background: $primary;
+            // color: $secondary;
+            border: 5px solid $primary;
         }
     }
 }
