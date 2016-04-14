@@ -1,5 +1,5 @@
 .section {
-    padding: 8rem 0;
+    padding: 0 0 8rem 0;
     background: $secondary;
 }
 
@@ -14,9 +14,24 @@
 
 .section--approach {
     transform: skewY(3deg);
+    padding-top: 0;
 
     .container {
         transform: skewY(-3deg);
+    }
+
+    header {
+        text-align: right;
+    }
+
+    .section--title,
+    .section--subtitle {
+        display: inline-block;
+        text-align: right;
+    }
+
+    .section--title {
+        margin-top: -2rem;
     }
 }
 
@@ -26,6 +41,14 @@
     .container,
     .g {
         transform: skewY(3deg);
+    }
+
+    header {
+        text-align: center;
+    }
+
+    .section--title {
+        margin-top: -3.5rem;
     }
 
     .gi {
@@ -41,5 +64,9 @@
 
     .container {
         transform: skewY(5deg);
+    }
+
+    .section--title {
+        margin-top: -1rem;
     }
 }

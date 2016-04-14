@@ -34,11 +34,21 @@ h6 {
     font-weight: 300;
 }
 
+.section--title,
+.section--subtitle {
+    display: inline-block;
+}
+
 .section--title {
     font-size: 6rem;
     font-weight: 300;
     text-transform: uppercase;
     line-height: 1;
+
+    position: relative;
+    padding: 3rem 1rem 1rem;
+    border: 5px solid currentColor;
+
 }
 
 .section--subtitle {
