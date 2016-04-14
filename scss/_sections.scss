@@ -14,12 +14,15 @@
 
 .section--hero {
     padding-top: 15rem;
-    background: transparent;
+    padding-bottom: 15rem;
+    background: #5b4e62 url(../img/geo-pattern.png);
 }
 
 .section--approach {
     transform: skewY(3deg);
+    margin-top: -7rem;
     padding-top: 0;
+    overflow: hidden;
 
     .container {
         transform: skewY(-3deg);
