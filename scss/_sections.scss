@@ -65,9 +65,12 @@
         border: 5px solid transparent;
 
         &:hover {
-            // color: $secondary;
             border: 5px solid $primary;
         }
+
+        // &:nth-of-type(even) .block--service .block__icon {
+        //     float: right;
+        // }
     }
 }
 
