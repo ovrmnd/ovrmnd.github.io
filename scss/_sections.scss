@@ -1,5 +1,6 @@
 .section {
-    padding: 4rem 0;
+    padding: 8rem 0;
+    background: $secondary;
 }
 
 .section--alt {
@@ -12,10 +13,33 @@
 }
 
 .section--approach {
+    transform: skewY(3deg);
+
+    .container {
+        transform: skewY(-3deg);
+    }
 }
 
 .section--services {
+    transform: skewY(-3deg);
+
+    .container,
+    .g {
+        transform: skewY(3deg);
+    }
+
+    .gi {
+        &:hover {
+            color: $secondary;
+            background: $primary;
+        }
+    }
 }
 
 .section--contact {
+    transform: skewY(-3deg);
+
+    .container {
+        transform: skewY(3deg);
+    }
 }

@@ -4,7 +4,7 @@
 
 .block--service {
     text-align: center;
-    padding: 0 2rem;
+    padding: 2rem;
 
     .centerer {
         margin: auto;
@@ -12,6 +12,8 @@
 
     .block__icon {
         font-size: 4rem;
+        line-height: 1;
+        margin-bottom: 1rem;
     }
 
     .block__title {
