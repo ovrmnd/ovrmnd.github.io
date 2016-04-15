@@ -22,10 +22,6 @@
             display: inline-block;
             font-weight: 600;
             font-size: 2rem;
-
-            &.slash {
-                // margin-left: -5px;
-            }
         }
     }
 
@@ -74,8 +70,6 @@
             font-size: 1.5rem;
         }
 
-        .block__description {
-
-        }
+        .block__description {}
     }
 }
