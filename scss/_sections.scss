@@ -29,8 +29,13 @@
     padding-top: 0;
     overflow: hidden;
 
-    .container {
+    .container,
+    .g {
         transform: skewY(-3deg);
+    }
+
+    .g {
+        margin: 0;
     }
 
     header {

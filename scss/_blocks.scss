@@ -1,6 +1,36 @@
 .block {
 
 }
+.block--approach {
+    .block__title {
+        position: relative;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        padding-bottom: 1rem;
+
+        &:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 2px;
+            background: $secondary;
+        }
+
+        span {
+            display: inline-block;
+            font-weight: 600;
+            font-size: 2rem;
+
+            &.slash {
+                // margin-left: -5px;
+            }
+        }
+    }
+
+
+}
 
 .block--service {
     .block__icon {
