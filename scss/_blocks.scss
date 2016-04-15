@@ -1,10 +1,6 @@
 .block {}
 
 .block--approach {
-    @media (min-width: $bp-s) {
-        padding: 2rem 0;
-    }
-
     .block__title {
         position: relative;
         font-size: 2rem;
@@ -25,6 +21,10 @@
             display: inline-block;
             font-weight: 600;
         }
+    }
+
+    @media (min-width: $bp-m) {
+        padding: 2rem 1rem;
     }
 }
 
@@ -48,7 +48,7 @@
 
     @media (min-width: $bp-xs) {
         text-align: center;
-        padding: 2rem;
+        padding: 2rem 0;
 
         .centerer {
             margin: auto;
@@ -71,5 +71,10 @@
         }
 
         .block__description {}
+    }
+
+
+    @media (min-width: $bp-m) {
+        padding: 2rem 1rem;
     }
 }
