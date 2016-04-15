@@ -1,6 +1,5 @@
-.block {
+.block {}
 
-}
 .block--approach {
     @media (min-width: $bp-s) {
         padding: 2rem 0;
@@ -27,8 +26,6 @@
             font-weight: 600;
         }
     }
-
-
 }
 
 .block--service {
