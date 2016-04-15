@@ -2,6 +2,10 @@
 
 }
 .block--approach {
+    @media (min-width: $bp-s) {
+        padding: 2rem 0;
+    }
+
     .block__title {
         position: relative;
         font-size: 2rem;
