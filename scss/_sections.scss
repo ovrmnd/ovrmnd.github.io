@@ -29,8 +29,7 @@
     padding-top: 0;
     overflow: hidden;
 
-    .container,
-    .g {
+    .container {
         transform: skewY(-3deg);
     }
 
@@ -56,8 +55,7 @@
 .section--services {
     transform: skewY(-3deg);
 
-    .container,
-    .g {
+    .container {
         transform: skewY(3deg);
     }
 
