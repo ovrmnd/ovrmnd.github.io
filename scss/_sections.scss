@@ -74,17 +74,13 @@
         padding-top: 5rem;
     }
 
-    .gi {
-        border: 5px solid transparent;
+    // .gi {
+    //     border: 5px solid transparent;
 
-        &:hover {
-            border: 5px solid $primary;
-        }
-
-        // &:nth-of-type(even) .block--service .block__icon {
-        //     float: right;
-        // }
-    }
+    //     &:hover {
+    //         border: 5px solid $primary;
+    //     }
+    // }
 }
 
 .section--contact {
