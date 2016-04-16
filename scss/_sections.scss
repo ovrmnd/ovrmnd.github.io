@@ -14,23 +14,22 @@
 
 .section--hero {
     padding-top: 12rem;
-    padding-bottom: 12rem;
+    padding-bottom: 14rem;
     background: #5b4e62 url(../img/geo-pattern.png);
 
     @media (min-width: $bp-s) {
         padding-top: 15rem;
-        padding-bottom: 15rem;
+        padding-bottom: 19rem;
     }
 }
 
 .section--approach {
-    transform: skewY(3deg);
+    transform: skewY(6deg);
     margin-top: -7rem;
-    // padding-top: 0;
     overflow: hidden;
 
     .container {
-        transform: skewY(-3deg);
+        transform: skewY(-6deg);
     }
 
     .g {
@@ -53,10 +52,10 @@
 }
 
 .section--services {
-    transform: skewY(-3deg);
+    transform: skewY(-6deg);
 
     .container {
-        transform: skewY(3deg);
+        transform: skewY(6deg);
     }
 
     .g {
@@ -82,10 +81,15 @@
 }
 
 .section--contact {
-    transform: skewY(-5deg);
+    transform: skewY(-10deg);
+    padding: 6rem 0;
+
+    @media (min-width: $bp-xs) {
+        padding: 12rem 0;
+    }
 
     .container {
-        transform: skewY(5deg);
+        transform: skewY(10deg);
     }
 
     .section--title {
