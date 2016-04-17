@@ -24,12 +24,12 @@
 }
 
 .section--approach {
-    transform: skewY(6deg);
+    transform: skewY(6deg) translate3d(0,0,0);
     margin-top: -7rem;
     overflow: hidden;
 
     .container {
-        transform: skewY(-6deg);
+        transform: skewY(-6deg) translate3d(0,0,0);
     }
 
     .g {
@@ -48,10 +48,10 @@
 }
 
 .section--services {
-    transform: skewY(-6deg);
+    transform: skewY(-6deg) translate3d(0,0,0);
 
     .container {
-        transform: skewY(6deg);
+        transform: skewY(6deg) translate3d(0,0,0);
     }
 
     .g {
@@ -72,14 +72,15 @@
 }
 
 .section--contact {
-    transform: skewY(-10deg);
+    transform: skewY(-10deg) translate3d(0,0,0);
     padding: 6rem 0;
+    border: 5px solid $primary;
 
     @media (min-width: $bp-xs) {
         padding: 12rem 0;
     }
 
     .container {
-        transform: skewY(10deg);
+        transform: skewY(10deg) translate3d(0,0,0);
     }
 }

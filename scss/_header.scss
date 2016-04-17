@@ -29,22 +29,6 @@
     }
 }
 
-.mobile-menu {
-    position: absolute;
-    top: 50%;
-    right: 1rem;
-    transform: translateY(-50%);
-    font-size: 1.2rem;
-
-    &.open {
-        color: $white;
-    }
-
-    @media (min-width: 599px) {
-        display: none;
-    }
-}
-
 .midnightHeader.primary {
     background: $primary;
 
