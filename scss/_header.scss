@@ -45,6 +45,10 @@
             fill: $secondary;
         }
     }
+
+    .nav a:after {
+        background: $secondary;
+    }
 }
 
 .midnightHeader.secondary {

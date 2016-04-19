@@ -26,14 +26,13 @@
                 left: 0;
                 width: 0;
                 height: 1px;
-                background: $primary;
+                background: $white;
                 transition: 0.3s cubic-bezier(0.680, -0.550, 0.265, 1.550);
             }
 
             &:hover:after,
             &.active:after {
                 width: 100%;
-                background: $white;
             }
         }
     }
