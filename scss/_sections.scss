@@ -36,30 +36,34 @@
         margin: 0;
     }
 
-    header {
-        text-align: right;
-    }
-
     .section--title,
     .section--subtitle {
         display: inline-block;
         text-align: right;
     }
+
+    @media (min-width: $bp-s) {
+        header {
+            text-align: right;
+        }
+    }
 }
 
-.section--services {
-    transform: skewY(-6deg) translate3d(0,0,0);
+.section--capabilities {
+    transform: skewY(7deg);
 
     .container {
-        transform: skewY(6deg) translate3d(0,0,0);
+        transform: skewY(-7deg);
     }
 
     .g {
         margin: 0;
     }
 
-    header {
-        text-align: center;
+    @media (min-width: $bp-s) {
+        header {
+            text-align: center;
+        }
     }
 
     // .gi {
