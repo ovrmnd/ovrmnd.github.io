@@ -24,12 +24,12 @@
 }
 
 .section--approach {
-    transform: skewY(6deg) translate3d(0,0,0);
+    transform: skewY(6deg);
     margin-top: -7rem;
     overflow: hidden;
 
     .container {
-        transform: skewY(-6deg) translate3d(0,0,0);
+        transform: skewY(-6deg);
     }
 
     .g {
