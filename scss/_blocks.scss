@@ -28,7 +28,7 @@
     }
 }
 
-.block--service {
+.block--capability {
     .block__icon {
         float: left;
         width: 20%;
@@ -43,7 +43,7 @@
 
     .block__title {
         font-size: 1.2rem;
-        font-weight: 600;
+        // font-weight: 600;
     }
 
     @media (min-width: $bp-xs) {
