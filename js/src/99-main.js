@@ -20,7 +20,7 @@
      *  Toggle whether a form fields is filled
      */
     var toggleFilled = function(el) {
-        if($(el)) {
+        if($(el).val()) {
             $(el).addClass('filled');
         } else {
             $(el).removeClass('filled');
@@ -34,6 +34,9 @@
         toggleFilled(this);
     });
     $('select' ).change(function(e) {
+        toggleFilled(this);
+    });
+    $('input, textarea, select').blur(function(e){
         toggleFilled(this);
     });
 
