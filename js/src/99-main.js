@@ -63,11 +63,14 @@
     /**
      *  Smooth scroll window to an element
      */
-    $('a[href^="#"').click(function(e) {
+    $('a[href^="#"]').click(function(e) {
         e.preventDefault();
-        $('html, body').animate({
-            scrollTop: ($($.attr(this, 'href')).offset().top) - $('.header').height()
-        }, 500);
+        console.log($(this).attr('href'));
+        if($(this).attr('href') !== '#') {
+            $('html, body').animate({
+                scrollTop: ($($.attr(this, 'href')).offset().top) - $('.header').height()
+            }, 500);
+        }
     });
 
     /**
