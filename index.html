@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="shortcut icon" type="image/png" href="./img/favicon.png"/>
         <title>Ovrmnd | Des Moines Web Development</title>
-        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
         <link href="./css/style.css" rel="stylesheet">
         <script src="./js/head.min.js"></script>
 
@@ -48,35 +48,454 @@
         <meta name="twitter:description" content="Des Moines Web Development">
         <meta name="twitter:url" content="/">
         <meta name="twitter:image" content="./img/ovrmnd-logo.png"/>
-
-        <style>
-            h1,
-            h2 {
-                position: absolute;
-                visibility: hidden;
-                text-indent: -9999px;
-            }
-
-            .logo {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                width: 50%;
-                width: 50vw;
-                width: 50vmin;
-                max-width: 100%;
-                max-width: 100vh;
-            }
-        </style>
     </head>
 
-    <body>
-        <div class="hero">
-            <h1>Ovrmnd</h1>
-            <h2>Des Moines Web Development</h2>
-            <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><style>.a{fill:#5b4e62;}.b{fill:#b6f1dd;}</style></defs><title>ovrmnd-logo</title><rect class="a" x="16.5" y="16.5" width="967" height="967"/><path class="b" d="M967,33V967H33V33H967m33-33H0V1000H1000V0h0Z"/><path class="b" d="M258.93,170.15q54.45,0,93.09,38.63t38.63,93.09q0,54.46-38.63,93.09t-93.09,38.63q-54.46,0-93.09-38.63t-38.63-93.09q0-54.45,38.63-93.09T258.93,170.15Zm0,229.77q40.47,0,69.36-28.7,28.7-28.7,28.7-69.36,0-40.47-28.7-69.36-28.88-28.7-69.36-28.7-40.66,0-69.36,28.7-28.7,28.88-28.7,69.36,0,40.66,28.7,69.36T258.93,399.92Z"/><path class="b" d="M601.38,172.54a3.45,3.45,0,0,1,3.5-2.39H631a3.5,3.5,0,0,1,2.94,1.47,3.54,3.54,0,0,1,.55,3.31L546.37,431.19a3.14,3.14,0,0,1-3.31,2.39H519.7a3.14,3.14,0,0,1-3.31-2.39L428.27,174.93a3.54,3.54,0,0,1,.55-3.31,3.5,3.5,0,0,1,2.94-1.47h26.12a3.15,3.15,0,0,1,3.31,2.39l70.09,204Z"/><path class="b" d="M876.14,430.09a2.42,2.42,0,0,1-.18,2.39,2.06,2.06,0,0,1-2,1.1H841.19a2,2,0,0,1-2-1.29L777.35,319.53l0.18-.18H732.09v111.3A2.11,2.11,0,0,1,729.7,433H701a2.11,2.11,0,0,1-2.39-2.39V172.35A2.11,2.11,0,0,1,701,170h96.77q31.64,0,53.72,22.63t21.16,54.27a72.53,72.53,0,0,1-17.48,45.26,75.86,75.86,0,0,1-41,25ZM797.77,285.86a41.21,41.21,0,1,0,0-82.42H732.09v82.42h65.68Z"/><path class="b" d="M338.38,576.91a2.12,2.12,0,0,1,2.39,2.39V838a2.11,2.11,0,0,1-2.39,2.39H311.15a2.11,2.11,0,0,1-2.39-2.39V642.77l-74.14,82.79q-1.84,1.84-3.5,0l-74-82.6V838a2.11,2.11,0,0,1-2.39,2.39H127.55a2.11,2.11,0,0,1-2.39-2.39V579.3a2.11,2.11,0,0,1,2.39-2.39h10.67a6.29,6.29,0,0,1,4.78,2.21l89.78,100.45,90-100.45a6.28,6.28,0,0,1,4.78-2.21h10.85Z"/><path class="b" d="M593.54,576.73a2.12,2.12,0,0,1,2.39,2.39V838a2.11,2.11,0,0,1-2.39,2.39H580.48a2.26,2.26,0,0,1-1.84-.92L438.27,652V838a2.11,2.11,0,0,1-2.39,2.39H408.66a2.11,2.11,0,0,1-2.39-2.39V579.12a2.12,2.12,0,0,1,2.39-2.39H420.8a2.16,2.16,0,0,1,1.84,1.1L563.92,766.4V579.12a2.11,2.11,0,0,1,2.39-2.39h27.23Z"/><path class="b" d="M877.07,576.36a2.11,2.11,0,0,1,2.39,2.39V838a2.11,2.11,0,0,1-2.39,2.39H795.75q-54.45,0-93.82-37.71t-40.47-91.8q-1.1-55.37,37.9-94.93,38.82-39.55,94.19-39.55h83.52ZM845.79,806.68V610H793.55q-40.84,0-69.54,28.7-28.88,28.88-28.88,69.54T724,777.8q28.7,28.88,69.54,28.88h52.25Z"/></svg>
-        </div>
+    <body id="top">
+        <header class="header">
+            <div class="container">
+                <a href="#top" class="logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><title>Ovrmnd</title><rect class="dark" x="16.5" y="16.5" width="967" height="967"/><path class="light" d="M967,33V967H33V33H967m33-33H0V1000H1000V0h0Z"/><path class="light" d="M258.93,170.15q54.45,0,93.09,38.63t38.63,93.09q0,54.46-38.63,93.09t-93.09,38.63q-54.46,0-93.09-38.63t-38.63-93.09q0-54.45,38.63-93.09T258.93,170.15Zm0,229.77q40.47,0,69.36-28.7,28.7-28.7,28.7-69.36,0-40.47-28.7-69.36-28.88-28.7-69.36-28.7-40.66,0-69.36,28.7-28.7,28.88-28.7,69.36,0,40.66,28.7,69.36T258.93,399.92Z"/><path class="light" d="M601.38,172.54a3.45,3.45,0,0,1,3.5-2.39H631a3.5,3.5,0,0,1,2.94,1.47,3.54,3.54,0,0,1,.55,3.31L546.37,431.19a3.14,3.14,0,0,1-3.31,2.39H519.7a3.14,3.14,0,0,1-3.31-2.39L428.27,174.93a3.54,3.54,0,0,1,.55-3.31,3.5,3.5,0,0,1,2.94-1.47h26.12a3.15,3.15,0,0,1,3.31,2.39l70.09,204Z"/><path class="light" d="M876.14,430.09a2.42,2.42,0,0,1-.18,2.39,2.06,2.06,0,0,1-2,1.1H841.19a2,2,0,0,1-2-1.29L777.35,319.53l0.18-.18H732.09v111.3A2.11,2.11,0,0,1,729.7,433H701a2.11,2.11,0,0,1-2.39-2.39V172.35A2.11,2.11,0,0,1,701,170h96.77q31.64,0,53.72,22.63t21.16,54.27a72.53,72.53,0,0,1-17.48,45.26,75.86,75.86,0,0,1-41,25ZM797.77,285.86a41.21,41.21,0,1,0,0-82.42H732.09v82.42h65.68Z"/><path class="light" d="M338.38,576.91a2.12,2.12,0,0,1,2.39,2.39V838a2.11,2.11,0,0,1-2.39,2.39H311.15a2.11,2.11,0,0,1-2.39-2.39V642.77l-74.14,82.79q-1.84,1.84-3.5,0l-74-82.6V838a2.11,2.11,0,0,1-2.39,2.39H127.55a2.11,2.11,0,0,1-2.39-2.39V579.3a2.11,2.11,0,0,1,2.39-2.39h10.67a6.29,6.29,0,0,1,4.78,2.21l89.78,100.45,90-100.45a6.28,6.28,0,0,1,4.78-2.21h10.85Z"/><path class="light" d="M593.54,576.73a2.12,2.12,0,0,1,2.39,2.39V838a2.11,2.11,0,0,1-2.39,2.39H580.48a2.26,2.26,0,0,1-1.84-.92L438.27,652V838a2.11,2.11,0,0,1-2.39,2.39H408.66a2.11,2.11,0,0,1-2.39-2.39V579.12a2.12,2.12,0,0,1,2.39-2.39H420.8a2.16,2.16,0,0,1,1.84,1.1L563.92,766.4V579.12a2.11,2.11,0,0,1,2.39-2.39h27.23Z"/><path class="light" d="M877.07,576.36a2.11,2.11,0,0,1,2.39,2.39V838a2.11,2.11,0,0,1-2.39,2.39H795.75q-54.45,0-93.82-37.71t-40.47-91.8q-1.1-55.37,37.9-94.93,38.82-39.55,94.19-39.55h83.52ZM845.79,806.68V610H793.55q-40.84,0-69.54,28.7-28.88,28.88-28.88,69.54T724,777.8q28.7,28.88,69.54,28.88h52.25Z"/></svg>
+                </a>
+
+                <nav class="nav">
+                    <ul>
+                        <li><a href="#approach">Approach</a></li>
+                        <li><a href="#capabilities">Capabilities</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <a href="#" class="mobile-menu">Menu</a>
+            </div>
+        </header>
+
+        <nav class="mobile-nav">
+            <ul>
+                <li><a href="#approach">Approach</a></li>
+                <li><a href="#capabilities">Capabilities</a></li>
+                <li><a href="#contact">Contact</a></li>
+
+                <!-- Close button -->
+                <li><a href="#" class="nav-toggle nav-close"><i class="fa fa-close"></i></a></li>
+            </ul>
+        </nav>
+
+        <section class="section section--hero">
+            <div class="container">
+                <h1 class="page--title">We create engaging and meaningful<br>experiences that make a difference.</h1>
+            </div>
+        </section>
+
+        <section id="approach" class="section section--alt section--approach" data-midnight="primary">
+            <div class="container">
+                <header>
+                    <h2 class="section--title">Approach</h2>
+                    <br>
+                    <p class="section--subtitle">
+                        We're passionate about everything we do and want to provide our clients the best, most engaging, meaningful experiences possible. We value building lasting relationships through honesty and compassion. In a busy world with so many choices, we want to work with you to create amazing results without any of the worry or hassle.
+                    </p>
+                </header>
+
+                <div class="g g-m-2 g-l-3">
+                    <div class="gi">
+                        <div class="block block--approach">
+                            <div class="block__title">
+                                <span>01/</span> Explore
+                            </div>
+
+                            <div class="block__description">
+                                We don't just want to work with you, we want to take the time to get to know you, your goals and what motivates you. We begin every project by learning all about you and your needs so we can create something meaningful together.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gi">
+                        <div class="block block--approach">
+                            <div class="block__title">
+                                <span>02/</span> Research
+                            </div>
+
+                            <div class="block__description">
+                                Knowledge is power. You've heard the saying and we put it into practice. Before we even begin the creative process, we do our homework to make sure our work will succeed at accomplishing your goals.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gi">
+                        <div class="block block--approach">
+                            <div class="block__title">
+                                <span>03/</span> Strategize
+                            </div>
+
+                            <div class="block__description">
+                                After we gather all the facts, we put them together to make a plan that works. We don't want to waste your time or money, so we work with you to come up with a game plan for getting the results you want through the best means available.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gi">
+                        <div class="block block--approach">
+                            <div class="block__title">
+                                <span>04/</span> Design
+                            </div>
+
+                            <div class="block__description">
+                                Your vision and brand is important to us. We want to ensure our work completely aligns with your goals and branding. We'll work with you every step of the way to make sure we're on the same page from start to finish.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gi">
+                        <div class="block block--approach">
+                            <div class="block__title">
+                                <span>05/</span> Build
+                            </div>
+
+                            <div class="block__description">
+                                We're not afraid of a little hard work. Once we've laid out the details, we'll put all our efforts and expertise into doing our best work for you. We're just as excited as you to get your work out there and start seeing results.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gi">
+                        <div class="block block--approach">
+                            <div class="block__title">
+                                <span>06/</span> Launch
+                            </div>
+
+                            <div class="block__description">
+                                We don't want to put anything out to the world that you're not 100% satisfied with. Before pushing anything live, we'll ensure you love it as much as we do. When you give the go-ahead, we'll happily flip the switch and watch your vision come to life.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="capabilities" class="section section--capabilities" data-midnight="secondary">
+            <div class="container">
+                <header>
+                    <h2 class="section--title">Capabilities</h2>
+                    <br>
+                    <p class="section--subtitle">
+                        We love what we do and have years of experience doing it. Check out all the ways we can put that passion and expertise to work for you below.
+                    </p>
+                </header>
+
+                <div class="g g-center g-flex g-s-2 g-m-3 g-l-4">
+                    <div class="gi">
+                        <div class="block block--capability">
+                            <div class="centerer">
+                                <div class="block__icon">
+                                    <i class="fa fa-code"></i>
+                                </div>
+
+                                <div class="block__details">
+                                    <div class="block__title">Web Development</div>
+
+                                    <div class="block__description">
+                                        Whether using a CMS, like WordPress, or keeping it simple with HTML, CSS and JavaScript, we build websites to fit your needs.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gi">
+                        <div class="block block--capability">
+                            <div class="centerer">
+                                <div class="block__icon">
+                                    <i class="fa fa-desktop"></i>
+                                </div>
+
+                                <div class="block__details">
+                                    <div class="block__title">Web Design</div>
+
+                                    <div class="block__description">
+                                        From layout to colors to fonts, we make your website look great.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gi">
+                        <div class="block block--capability">
+                            <div class="centerer">
+                                <div class="block__icon">
+                                    <i class="fa fa-mobile"></i>
+                                </div>
+
+                                <div class="block__details">
+                                    <div class="block__title">App Design</div>
+
+                                    <div class="block__description">
+                                        In a world increasingly moving toward mobile, we design apps people want to use.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gi">
+                        <div class="block block--capability">
+                            <div class="centerer">
+                                <div class="block__icon">
+                                    <i class="fa fa-sitemap"></i>
+                                </div>
+
+                                <div class="block__details">
+                                    <div class="block__title">Web Strategy</div>
+
+                                    <div class="block__description">
+                                        We create a roadmap to results and success through careful site planning.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gi">
+                        <div class="block block--capability">
+                            <div class="centerer">
+                                <div class="block__icon">
+                                    <i class="fa fa-bullseye"></i>
+                                </div>
+
+                                <div class="block__details">
+                                    <div class="block__title">Content Strategy & Marketing</div>
+
+                                    <div class="block__description">
+                                        We'll make sure your content is working for you and getting in front of the right eyes.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gi">
+                        <div class="block block--capability">
+                            <div class="centerer">
+                                <div class="block__icon">
+                                    <i class="fa fa-comments-o"></i>
+                                </div>
+
+                                <div class="block__details">
+                                    <div class="block__title">Social Media Strategy & Marketing</div>
+
+                                    <div class="block__description">
+                                        We know how to leverage the power of social networks to get your message out there and drive success.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gi">
+                        <div class="block block--capability">
+                            <div class="centerer">
+                                <div class="block__icon">
+                                    <i class="fa fa-wrench"></i>
+                                </div>
+
+                                <div class="block__details">
+                                    <div class="block__title">Search Engine Optimization</div>
+
+                                    <div class="block__description">
+                                        Algorithms are confusing. When people search, we help to make sure they find you.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gi">
+                        <div class="block block--capability">
+                            <div class="centerer">
+                                <div class="block__icon">
+                                    <i class="fa fa-search"></i>
+                                </div>
+
+                                <div class="block__details">
+                                    <div class="block__title">Search Engine Marketing</div>
+
+                                    <div class="block__description">
+                                        Click-throughs to conversions. We get your ads in front of your target audience.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gi">
+                        <div class="block block--capability">
+                            <div class="centerer">
+                                <div class="block__icon">
+                                    <i class="fa fa-book"></i>
+                                </div>
+
+                                <div class="block__details">
+                                    <div class="block__title">Content Entry</div>
+
+                                    <div class="block__description">
+                                        Inputting information can be tedious and time consuming. Let us do the heavy lifting for you.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gi">
+                        <div class="block block--capability">
+                            <div class="centerer">
+                                <div class="block__icon">
+                                    <i class="fa fa-edit"></i>
+                                </div>
+
+                                <div class="block__details">
+                                    <div class="block__title">Content Creation</div>
+
+                                    <div class="block__description">
+                                        Content is king. We're pros at creating amazing content that'll strengthen your brand while growing your audience.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gi">
+                        <div class="block block--capability">
+                            <div class="centerer">
+                                <div class="block__icon">
+                                    <i class="fa fa-area-chart"></i>
+                                </div>
+
+                                <div class="block__details">
+                                    <div class="block__title">Analytics Strategy & Reporting</div>
+
+                                    <div class="block__description">
+                                        Call us nerds, but we love data and numbers. We'll do the digging to let you know how you're performing and how you can improve.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section section--alt section--contact" data-midnight="primary">
+            <div class="container">
+                <header>
+                    <h2 class="section--title">Contact</h2>
+                    <br>
+                    <p class="section--subtitle">
+                        Excited to get started? So are we! Share a little about yourself below and we'd love to chat about how we can work together.
+                    </p>
+                </header>
+
+                <form class="form-contact" action="https://formspree.io/kjbrumm@gmail.com" method="POST" autocomplete="off">
+                    <div class="g">
+                        <div class="gi gi-m-6">
+                            <div class="form-field">
+                                <label>
+                                    <input type="text" name="name" required>
+                                    <span>Name</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="gi gi-m-6">
+                            <div class="form-field">
+                                <label>
+                                    <input type="email" name="email" required>
+                                    <span>Email</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="gi gi-m-6">
+                            <div class="form-field">
+                                <label>
+                                    <input type="text" name="website">
+                                    <span>Website</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="gi gi-m-6">
+                            <div class="form-field">
+                                <label>
+                                    <input type="text" name="phone">
+                                    <span>Phone</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="gi gi-m-6">
+                            <div class="form-field select">
+                                <label>
+                                    <select name="services">
+                                        <option value="" disabled selected></option>
+                                        <option value="Not sure">Not sure</option>
+                                        <option value="Development">Development</option>
+                                        <option value="Design">Design</option>
+                                        <option value="SEO">SEO</option>
+                                        <option value="Marketing">Marketing</option>
+                                        <option value="Content/Copywriting">Content</option>
+                                        <option value="Everything">Everything</option>
+                                        <option value="Other">Other</option>
+                                    </select>
+                                    <span>Project Type</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="gi gi-m-6">
+                            <div class="form-field select">
+                                <label>
+                                    <select name="budget">
+                                        <option value="" disabled selected></option>
+                                        <option value="Not sure">Not sure</option>
+                                        <option value="Less than $1,000">Less than $1,000</option>
+                                        <option value="$1,000 - $5,000">$1,000 - $5,000</option>
+                                        <option value="$5,000 - $10,000">$5,000 - $10,000</option>
+                                        <option value="Greater than $10,000">Greater than $10,000</option>
+                                    </select>
+                                    <span>Budget</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="gi">
+                            <div class="form-field">
+                                <label>
+                                    <textarea name="Comments"></textarea>
+                                    <span>Comments</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Special form shit -->
+                        <input type="text" name="_gotcha" class="is-vishidden">
+                        <input type="hidden" name="_subject" value="Ovrmnd Form Submission">
+                        <input type="hidden" name="_cc" value="tony.tandeski@gmail.com">
+
+                        <div class="gi">
+                            <input type="submit" value="Send" class="btn btn-full btn-alt">
+                        </div>
+                    </div>
+                </form>
+
+                <div class="form-notice"></div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container">
+                &copy; 2016 Ovrmnd // All Rights Reserved
+            </div>
+        </footer>
 
         <!-- JavaScript -->
         <script src="./js/main.min.js"></script>

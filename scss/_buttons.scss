@@ -4,7 +4,7 @@
 .button {
 	display: inline-block;
 	background: $primary;
-	color: $white;
+	color: $secondary;
 	line-height: 1;
     font-size: 1rem;
 	font-weight: normal;
@@ -13,7 +13,7 @@
 	text-align: center;
     font-family: $font;
     cursor: pointer;
-    border-radius: 3px;
+    transition: 0.3s ease-in-out;
 
 	&:hover,
 	&:focus {
@@ -26,6 +26,16 @@
 	}
 }
 
+.btn-alt {
+	background: $secondary;
+	color: $primary;
+
+	&:hover,
+	&:focus {
+		background: $secondary-light;
+	}
+}
+
 .btn-small {
 	padding: 0.5rem;
 }
@@ -33,4 +43,9 @@
 .btn-large {
 	padding: 1.5rem;
 	font-size: 1.4rem;
+}
+
+.btn-full {
+	display: block;
+	width: 100%;
 }

@@ -3,20 +3,23 @@
 // Colors
 $white : #fff;
 $black : #333333;
-$primary: #ff978f;
-$primary-light: #ff978f;
+$primary: #B6F1DD;
+$primary-light: lighten($primary, 15%);
 $secondary: #5b4e62;
-$secondary-light: #5b4e62;
+$secondary-light: lighten($secondary, 15%);
 
 // Fonts
 $helvetica: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $georgia: Georgia, Times, serif;
 
-$font: $helvetica;
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700,900);
+$lato: 'Lato', Helvetica, Arial, sans-serif;
+
+$font: $lato;
 $font-secondary: $georgia;
 
 // Layout
-$max-width: 72rem;
+$max-width: 75rem;
 $min-width: 20rem;
 $num-columns: 12;
 

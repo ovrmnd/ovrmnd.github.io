@@ -1,12 +1,18 @@
 // Main
 
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
 body {
 	font: 100%/1.5 $font;
 	-webkit-text-size-adjust: 100%;
     color: $primary;
     background: $secondary;
     min-width: $min-width;
-
+    overflow-x: hidden;
 }
 
 a {
@@ -15,7 +21,7 @@ a {
     transition: color 0.3s ease-in-out;
 
     &:hover {
-        color: $primary-light;
+        color: $white;
     }
 }
 
@@ -64,4 +70,14 @@ pre,
 :not(pre) > code {
     padding: 0.1rem;
     white-space: normal;
+}
+
+::-moz-selection {
+    color: $secondary;
+    background: $white;
+}
+
+::selection {
+    color: $secondary;
+    background: $white;
 }

@@ -5,7 +5,7 @@
   "scripts": {
     "browsersync": "browser-sync start --server --files 'css/style.css, js/*.min.js, **/*.html'",
     "build": "npm run js:build && npm run css:build",
-    "css:autoprefix": "postcss --use autoprefixer --output style.css style.css",
+    "css:autoprefix": "postcss --use autoprefixer --output css/style.css css/style.css",
     "css:build": "npm run css:compile && npm run css:autoprefix",
     "css:compile": "node-sass --output-style compressed scss/style.scss css/style.css",
     "css:watch": "watch 'npm run css:build' scss",

@@ -1,5 +1,60 @@
 // Header
 
 .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    // background: $secondary;
+    z-index: 99;
 
+    .container {
+        position: relative;
+    }
+}
+
+.logo {
+    display: inline-block;
+
+    svg {
+        width: 50px;
+    }
+
+    .dark {
+        fill: $secondary;
+    }
+
+    .light {
+        fill: $primary;
+    }
+}
+
+.midnightHeader.primary {
+    background: $primary;
+
+    a {
+        color: $secondary;
+
+        &:hover {
+            color: $secondary;
+        }
+    }
+
+    .logo {
+        .dark {
+            fill: $primary;
+        }
+
+        .light {
+            fill: $secondary;
+        }
+    }
+
+    .nav a:after {
+        background: $secondary;
+    }
+}
+
+.midnightHeader.secondary {
+    background: $secondary;
 }

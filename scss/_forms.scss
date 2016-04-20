@@ -1,0 +1,78 @@
+input,
+textarea,
+select {
+    display: block;
+    width: 100%;
+    color: $primary;
+    background: $secondary;
+    border: none;
+    outline: none;
+    padding: 2.5rem 1.5rem 1rem;
+    font-size: 1.2rem;
+    appearance: none;
+    -webkit-appearance: none;
+    transition: background 0.3s ease-in-out;
+}
+
+textarea {
+    height: 150px;
+    resize: none;
+}
+
+.form-field {
+    position: relative;
+
+    &.select {
+        width: 100%;
+        font-size: 1.2rem;
+        color: $primary;
+        border: none;
+        background: $secondary;
+        outline: none;
+    }
+
+    span {
+        position: absolute;
+        top: 50%;
+        left: 1.5rem;
+        font-size: 1rem;
+        color: $primary;
+        pointer-events: none;
+        transition: 0.3s ease-in-out;
+        transform: translateY(-50%);
+    }
+
+    input:focus ~ span,
+    input.filled ~ span,
+    textarea:focus ~ span,
+    textarea.filled ~ span,
+    select:focus ~ span,
+    select.filled ~ span {
+        top: 0;
+        font-size: 0.8rem;
+        color: $primary;
+        padding: 0.25rem 0.5rem;
+        background: $primary;
+        color: $secondary;
+        border-width: 0 1px 1px;
+        transform: none;
+    }
+}
+
+.form-contact {
+    .btn {
+        $size: 79px;
+        height: $size;
+        line-height: $size;
+        padding-top: 0;
+        padding-bottom: 0;
+        font-size: 1.2rem;
+    }
+}
+
+.form-notice {
+    display: none;
+    border: 1px solid $secondary;
+    padding: 2rem;
+    font-size: 1.2rem
+}

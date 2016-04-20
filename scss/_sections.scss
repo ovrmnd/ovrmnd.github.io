@@ -1,0 +1,90 @@
+.section {
+    padding: 4rem 0;
+    background: $secondary;
+
+    @media (min-width: $bp-xs) {
+        padding: 8rem 0;
+    }
+}
+
+.section--alt {
+    background: $primary;
+    color: $secondary;
+}
+
+.section--hero {
+    padding-top: 12rem;
+    padding-bottom: 14rem;
+    background: $secondary url(../img/geo-pattern.png);
+
+    @media (min-width: $bp-s) {
+        padding-top: 15rem;
+        padding-bottom: 19rem;
+    }
+}
+
+.section--approach {
+    transform: skewY(6deg);
+    margin-top: -7rem;
+    overflow: hidden;
+
+    .container {
+        transform: skewY(-6deg);
+    }
+
+    .g {
+        margin: 0;
+    }
+
+    .section--title,
+    .section--subtitle {
+        display: inline-block;
+        text-align: right;
+    }
+
+    @media (min-width: $bp-s) {
+        header {
+            text-align: right;
+        }
+    }
+}
+
+.section--capabilities {
+    transform: skewY(7deg);
+
+    .container {
+        transform: skewY(-7deg);
+    }
+
+    .g {
+        margin: 0;
+    }
+
+    @media (min-width: $bp-s) {
+        header {
+            text-align: center;
+        }
+    }
+
+    // .gi {
+    //     border: 5px solid transparent;
+
+    //     &:hover {
+    //         border: 5px solid $primary;
+    //     }
+    // }
+}
+
+.section--contact {
+    transform: skewY(-10deg) translate3d(0,0,0);
+    padding: 6rem 0;
+    border: 5px solid $primary;
+
+    @media (min-width: $bp-xs) {
+        padding: 12rem 0;
+    }
+
+    .container {
+        transform: skewY(10deg) translate3d(0,0,0);
+    }
+}
