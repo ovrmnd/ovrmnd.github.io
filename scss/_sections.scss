@@ -88,3 +88,60 @@
         transform: skewY(10deg) translate3d(0,0,0);
     }
 }
+
+.section--social {
+    text-align: center;
+    background: $white;
+    border: 5px solid $white;
+
+    transform: skewY(-10deg) translate3d(0,0,0);
+
+    .container {
+        transform: skewY(10deg) translate3d(0,0,0);
+    }
+
+    a {
+        color: $secondary;
+
+        &:hover {
+            color: $secondary-light;
+        }
+    }
+
+    .social-links {
+        display: inline-block;
+        margin: 0 auto;
+
+        li {
+            float: left;
+            padding-right: 2rem;
+            font-size: 3rem;
+
+            @media (min-width: $bp-s) {
+                padding-right: 2.5rem;
+                font-size: 4rem;
+            }
+
+            &:last-of-type {
+                padding-right: 0;
+            }
+        }
+    }
+
+    .email {
+        position: relative;
+        margin-top: 1rem;
+        padding-top: 1rem;
+        font-size: 2rem;
+
+        &:before {
+            content: '';
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            width: 25px;
+            height: 2px;
+            background: #5B4E62;
+        }
+    }
+}
