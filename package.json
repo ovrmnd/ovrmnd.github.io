@@ -1,7 +1,7 @@
 {
   "name": "ovrmnd.github.io",
   "version": "0.1.0",
-  "description": "Des Moines Web Development",
+  "description": "A web and digital agency based in Des Moines, Iowa.",
   "scripts": {
     "browsersync": "browser-sync start --server --files 'css/style.css, js/*.min.js, **/*.html'",
     "build": "npm run js:build && npm run css:build",
