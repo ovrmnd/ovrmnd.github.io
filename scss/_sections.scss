@@ -35,18 +35,6 @@
     .g {
         margin: 0;
     }
-
-    .section--title,
-    .section--subtitle {
-        display: inline-block;
-        text-align: right;
-    }
-
-    @media (min-width: $bp-s) {
-        header {
-            text-align: right;
-        }
-    }
 }
 
 .section--capabilities {
@@ -79,6 +67,12 @@
     transform: skewY(-10deg) translate3d(0,0,0);
     padding: 6rem 0;
     border: 5px solid $primary;
+
+    @media (min-width: $bp-s) {
+        header {
+            text-align: right;
+        }
+    }
 
     @media (min-width: $bp-xs) {
         padding: 12rem 0;
