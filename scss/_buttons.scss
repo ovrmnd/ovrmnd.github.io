@@ -17,6 +17,7 @@
 
 	&:hover,
 	&:focus {
+		color: $secondary;
 		background: $primary-light;
 	}
 
@@ -27,11 +28,12 @@
 }
 
 .btn-alt {
-	background: $secondary;
 	color: $primary;
+	background: $secondary;
 
 	&:hover,
 	&:focus {
+		color: $primary;
 		background: $secondary-light;
 	}
 }
