@@ -32,8 +32,10 @@
         transform: skewY(-6deg);
     }
 
-    .g {
-        margin: 0;
+    @media (min-width: $bp-m) {
+        .g {
+            margin: 0 -2rem;
+        }
     }
 }
 
@@ -44,8 +46,10 @@
         transform: skewY(-7deg);
     }
 
-    .g {
-        margin: 0;
+    @media (min-width: $bp-m) {
+        .g {
+            margin: 0 -2rem;
+        }
     }
 
     @media (min-width: $bp-s) {
